@@ -26,7 +26,20 @@ router.get('/:id', (req, res) => {
 });
 
 router.post('/', (req, res) => {
-  // create a new tag
+  // find all tags
+  // be sure to include its associated Product data
+  Tag.findAll({
+    include: [{
+      model: Product,
+      through: ProductTag,
+      as: 'products'
+    }]
+  })
+  .then(data => res.json(data))
+  .catch(err => {
+    console.log(err)
+    res.status(500).json(err)
+  })
 });
 
 router.put('/:id', (req, res) => {
