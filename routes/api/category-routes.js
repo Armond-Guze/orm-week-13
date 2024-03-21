@@ -19,13 +19,36 @@ router.get('/', (req, res) => {
   })
 });
 
-router.get('/:id', (req, res) => {
+router.get('/:id', async (req, res) => {
   // find one category by its `id` value
   // be sure to include its associated Products
+  Category.findByPk({
+    include: [Product]
+  })
+  .then(data => {
+    console.log("Data", data)
+    return res.json(data)
+  })
+  .catch(err => {
+    console.log(err)
+    res.status(500).json(err)
+  })
 });
 
 router.post('/', (req, res) => {
-  // create a new category
+  // find all categories
+  // be sure to include its associated Products
+  Category.findAll({
+    include: [Product]
+  })
+  .then(data => {
+    console.log('Data', data)
+    return res.json(data)
+  })
+  .catch(err => {
+    console.log(err)
+    res.status(500).json(err)
+  })
 });
 
 router.put('/:id', (req, res) => {
