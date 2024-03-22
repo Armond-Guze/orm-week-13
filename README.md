@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# orm-week-13
-=======
 # 13 Object-Relational Mapping (ORM): E-Commerce Back End
 
 ## Your Task
@@ -263,4 +260,3 @@ You are required to submit BOTH of the following for review:
 © 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
 
 https://github.com/Armond-Guze/orm-week-13
->>>>>>> 50743e2 (updated readme)
