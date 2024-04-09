@@ -3,4 +3,5 @@ This back end database has been created for e-commerce websites using a function
 https://github.com/Armond-Guze/orm-week-13
 
 
-![Uploading image.png…]()
+![sccc](https://github.com/Armond-Guze/orm-week-13/assets/88688052/c1420d3e-c09b-4495-bb58-5d2fa9ba3eb4)
+
