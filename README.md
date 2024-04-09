@@ -5,3 +5,5 @@ This project is a great introduction into thinking about how E-Commerce navigate
 https://github.com/Armond-Guze/orm-week-13
 
 
+![sccc](https://github.com/Armond-Guze/orm-week-13/assets/88688052/c1420d3e-c09b-4495-bb58-5d2fa9ba3eb4)
+
